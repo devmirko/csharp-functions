@@ -70,3 +70,5 @@ int SommaElementiArray(int[] array)
     return totArray;
 }
 
+
+
