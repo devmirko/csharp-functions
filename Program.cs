@@ -37,6 +37,12 @@ Console.WriteLine(somma);
 //Stampare la somma di tutti i numeri elevati al quadrati
 int sommaQuadrato = SommaElementiArray(arrayQuadrato);
 Console.WriteLine(sommaQuadrato);
+
+//fattoriale di un numero
+Console.WriteLine("inserisci un numero fattoriale");
+int NumberFattoriale = Convert.ToInt32(Console.ReadLine());
+Fattoriale(NumberFattoriale);
+
 //In questo esercizio vi chiedo di definire qualche funzione di utilità che poi potete usare per poter fare
 //operazioni complesse nei vostri programma principale.
 
@@ -82,5 +88,16 @@ int SommaElementiArray(int[] array)
     return totArray;
 }
 
+
+//Fattoriale di un numero
+void Fattoriale(int n) {
+
+    for (int i = n - 1; i > 0; i--)
+    {
+        n *= i;
+    }
+    Console.WriteLine(n);
+
+}
 
 
