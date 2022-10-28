@@ -14,12 +14,12 @@ StampaArray(arrayQuadrato);
 
 //Stampare la somma di tutti i numeri
 int somma = SommaElementiArray(arrayUser);
-StampaArrayItem(somma);
+Console.WriteLine(somma);
 
 
 //Stampare la somma di tutti i numeri elevati al quadrati
-int sommaQuadrato = quadrato(somma);
-StampaArrayItem(sommaQuadrato);
+int sommaQuadrato = SommaElementiArray(arrayQuadrato);
+Console.WriteLine(sommaQuadrato);
 //In questo esercizio vi chiedo di definire qualche funzione di utilità che poi potete usare per poter fare
 //operazioni complesse nei vostri programma principale.
 
@@ -33,10 +33,6 @@ void StampaArray(int[] array)
     }
 }
 
-void StampaArrayItem(int item)
-{
-    Console.WriteLine(item);
-}
 
 int quadrato(int x)
 {
