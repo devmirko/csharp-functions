@@ -48,7 +48,7 @@ int[] ElevaArrayAlQuadrato(int[] array)
     
     for (int i = 0; i < array.Length; i++)
     {
-        arrayQuadrato = array[i] * array[i];
+        arrayQuadrato[i] = quadrato(array[i]);
        
     }
     return arrayQuadrato;
@@ -57,10 +57,10 @@ int[] ElevaArrayAlQuadrato(int[] array)
 
 int SommaElementiArray(int[] array)
 {
-    int totArray = 0
+    int totArray = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        totArray += array[i]
+        totArray += array[i];
     }
     return totArray;
 }
