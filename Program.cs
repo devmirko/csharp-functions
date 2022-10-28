@@ -43,6 +43,12 @@ Console.WriteLine("inserisci un numero fattoriale");
 int NumberFattoriale = Convert.ToInt32(Console.ReadLine());
 Fattoriale(NumberFattoriale);
 
+//successione di fibonaci
+Console.WriteLine("inserisci un numero");
+int NumberFabonaci = Convert.ToInt32(Console.ReadLine());
+FibonacciNonRec(NumberFabonaci);
+
+
 //In questo esercizio vi chiedo di definire qualche funzione di utilità che poi potete usare per poter fare
 //operazioni complesse nei vostri programma principale.
 
@@ -98,6 +104,21 @@ void Fattoriale(int n) {
     }
     Console.WriteLine(n);
 
+}
+
+//fibonaci iterativo
+void FibonacciNonRec(int n)
+{
+    int a = 0;
+    int b = 1;
+    int temp = a;
+    for (int i = 0; i < n; i++)
+    {
+        temp = a;
+        a = b;
+        b = temp + b;
+    }
+    Console.WriteLine(a);
 }
 
 
