@@ -13,7 +13,7 @@ Console.WriteLine("Quanti numeri vuoi inserire?");
 int Number = Convert.ToInt32(Console.ReadLine());
 //crea un array vuoto in cui verranno inseriti i numeri che inserisce l'utente
 int[] array = new int[Number];
-//fai un ciclo per il numero di volte che l'utente inserisce il numero
+//fai un ciclo per il numero scelto dall' utente
 for (int i = 0; i < Number; i++)
 {   
     //indica quanti numeri ha inserito
