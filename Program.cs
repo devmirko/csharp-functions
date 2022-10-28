@@ -1,19 +1,36 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Diagnostics.Contracts;
+
 Console.WriteLine("Hello, World!");
 
 
 
 
 int[] arrayUser = { 2, 6, 7, 5, 3, 9 };
+
+Console.WriteLine("Quanti numeri vuoi inserire?");
+//prendi il numero dal utente
+int Number = Convert.ToInt32(Console.ReadLine());
+//crea un array vuoto in cui verranno inseriti i numeri che inserisce l'utente
+int[] array = new int[Number];
+//fai un ciclo per il numero di volte che l'utente inserisce il numero
+for (int i = 0; i < Number; i++)
+{   
+    //indica quanti numeri ha inserito
+    Console.WriteLine("Inserisci il numero " + ( i + 1));
+    //assegna il numero richiesto al array
+    array[i] = Convert.ToInt32(Console.ReadLine());
+}
+
 //Stampare l’array di numeri fornito a video
-StampaArray(arrayUser);
+StampaArray(array);
 
 //Stampare l’array di numeri fornito a video, dove ogni numero è stato prima elevato al quadrato;
-int[] arrayQuadrato = ElevaArrayAlQuadrato(arrayUser);
+int[] arrayQuadrato = ElevaArrayAlQuadrato(array);
 StampaArray(arrayQuadrato);
 
 //Stampare la somma di tutti i numeri
-int somma = SommaElementiArray(arrayUser);
+int somma = SommaElementiArray(array);
 Console.WriteLine(somma);
 
 
@@ -24,7 +41,6 @@ Console.WriteLine(sommaQuadrato);
 //operazioni complesse nei vostri programma principale.
 
 //Scrivete nel vostro programma principale Program.cs le seguenti funzioni di base:
-//void StampaArray
 
 void StampaArray(int[] array)
 {
